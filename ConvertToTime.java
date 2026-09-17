@@ -11,7 +11,7 @@
 			System.out.print("Seconds = ");
 			seconds = input.nextInt();
 			
-			//conversion 
+			//conversion calculations
 			minutes = seconds / SEC_PER_MIN;
 			hours = minutes / MIN_PER_HOUR;
 			remainder = seconds % SEC_PER_MIN;
