@@ -3,7 +3,7 @@
 	public class ConvertToTime {
 		public static void main(String[] args) {
 			int seconds, minutes, hours, remainder;
-			final int MIN_PER_HOUR = 60;
+			final int SEC_PER_HOUR = 3600;
 			final int SEC_PER_MIN = 60;
 			Scanner input = new Scanner(System.in);
 			
@@ -12,12 +12,13 @@
 			seconds = input.nextInt();
 			
 			//conversion calculations
-			minutes = seconds / SEC_PER_MIN;
-			hours = minutes / MIN_PER_HOUR;
+			hours = seconds / SEC_PER_HOUR;
+			int sec_left_over = seconds % SEC_PER_HOUR;
+			minutes = sec_left_over / SEC_PER_MIN;
 			remainder = seconds % SEC_PER_MIN;
 			
 			//output
-			System.out.printf("%,d s = %,d hrs, %,d min, %,d s", seconds, hours, minutes, remainder);
+			System.out.printf("%,d seconds = %,d hours, %,d minute, %,d seconds", seconds, hours, minutes, remainder);
 			
 		}
 		
