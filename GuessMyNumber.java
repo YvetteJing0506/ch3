@@ -11,7 +11,7 @@ import java.util.Random;
 			int number = random.nextInt(100) + 1;
 			
 			// prompt the user to get their guess
-			System.out.println("I'm thinking of a num5ber between 1 and 100 (including both). Can you guess what it is?");
+			System.out.println("I'm thinking of a number between 1 and 100 (including both). Can you guess what it is?");
 			System.out.print("Type a number: ");
 			int guess = input.nextInt();
 			
